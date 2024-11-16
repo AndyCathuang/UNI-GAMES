@@ -1,0 +1,96 @@
+﻿<Window x:Class="STUDY.sittings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STUDY"
+        mc:Ignorable="d"
+        Title="设置" Height="450" Width="800" Icon="/sittings.png" WindowStartupLocation="CenterScreen" >
+    <Window.Background>
+        <ImageBrush ImageSource="/80023d68-19c1-41a2-9876-46360570dc10.jpg" />
+    </Window.Background>
+    <Grid>
+        <TabControl Background="#00000000">
+            <TabItem Header="下载信息" BorderBrush="White">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#00000000" Margin="0,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="44*"/>
+                        <ColumnDefinition Width="17*"/>
+                        <ColumnDefinition Width="688*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" Content="启动器安装位置:C://programe files/uni-planluncher" HorizontalAlignment="Left" Margin="25,48,0,0" VerticalAlignment="Top" Width="360" Foreground="White" FontSize="14" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Button Content="选择位置" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="39" FontSize="14" FontFamily="楷体" Click="login_Click" Foreground="White" BorderBrush="White" Grid.Column="3" Margin="353,76,0,0" RenderTransformOrigin="0.683,1.097">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderThickness="1" BorderBrush="White" CornerRadius="7" Margin="11,0,0,9" >
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+
+                        </Button.Template>
+                    </Button>
+                    <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="57,81,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="301" TextChanged="TextBox_TextChanged" x:Name="tx2" Height="22" FontSize="14" FontFamily="楷体" />
+                    <Label Grid.Column="1" Content="游戏本体位置：" HorizontalAlignment="Left" Margin="25,79,0,0" VerticalAlignment="Top"  Foreground="White" FontSize="13" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Label Grid.Column="3" Content="©UNI-GAMES|星空游戏 2024 版权所有-保留所有权利" HorizontalAlignment="Left" Margin="144,350,0,0" VerticalAlignment="Top" Width="361" Foreground="White" FontSize="13" FontFamily="楷体"/>
+                    <RadioButton Grid.Column="1" Content="全速下载" HorizontalAlignment="Left" Margin="30,109,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="White" FontSize="15" FontFamily="楷体"/>
+                    <RadioButton Grid.Column="1" Content="智能下载" HorizontalAlignment="Left" Margin="30,132,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="White" FontSize="15" FontFamily="楷体"/>
+                    <RadioButton Grid.Column="1" Content="自定义速度(1000~50000KB)" HorizontalAlignment="Left" Margin="30,158,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="White" FontSize="15" FontFamily="楷体"/>
+                    <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="172,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1" FontSize="15" FontFamily="楷体"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="版本信息" Foreground="Black" BorderBrush="White" >
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#00000000">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="14*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="719*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="2" Content="游戏版本：测试版" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="127" Foreground="White" FontSize="13" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Label Grid.Column="2" Content="启动器版本：0.15.2" HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Width="127" Foreground="White" FontSize="13" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Label Grid.Column="2" Content="包体大小：72.63GB；启动器大小：84.24MB" HorizontalAlignment="Left" Margin="0,78,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="13" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Label Grid.Column="2" Content="安装日期：2024/11/01    18:49:24          （已完成）" HorizontalAlignment="Left" Margin="0,108,0,0" VerticalAlignment="Top" Width="361" Foreground="White" FontSize="13" FontFamily="楷体" Grid.ColumnSpan="3"/>
+                    <Label Grid.Column="4" Content="©UNI-GAMES|星空游戏 2024 版权所有-保留所有权利" HorizontalAlignment="Left" Margin="164,350,0,0" VerticalAlignment="Top" Width="361" Foreground="White" FontSize="13" FontFamily="楷体"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="19" Header="关于UNI-PLAN
+                     " VerticalAlignment="Top" Width="96" Margin="0,-1,0,0" BorderBrush="White">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#00000000">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="149*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="639*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="•UNI-PLAN是一款由UNI-GAMES®制作的一款星际冒险游戏。" HorizontalAlignment="Left" Margin="43,38,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="465" Foreground="White" FontSize="15" FontFamily="楷体"/>
+                    <Label Content="•游戏的背景设定在一个广袤无垠的宇宙中，玩家将化身为一名勇敢的冒险者，探索那些未知的星际领域。" HorizontalAlignment="Left" Margin="43,68,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="561" Foreground="White" FontSize="15" FontFamily="楷体"/>
+                    <Label Content="•这款游戏不仅采用了先进的虚幻引擎技术，带来了惊艳的视觉效果和沉浸式的游戏体验，还结合了独特的游戏机制&#xD;&#xA; 让玩家在每一次冒险中都能感受到新鲜和刺激。" HorizontalAlignment="Left" Margin="43,98,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="751" Foreground="White" Height="45" FontSize="15" FontFamily="楷体"/>
+                    <Label Content="•在游戏中，玩家需要面对各种各样的挑战，包括神秘的外星生物、复杂的星际任务以及未知的宇宙现象。&#xD;&#xA; 通过不断探索和解锁新的技能玩家能够提升自己的能力，并与其他玩家合作，完成更为艰巨的任务。" HorizontalAlignment="Left" Margin="43,143,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="751" Foreground="White" Height="57" FontSize="15" FontFamily="楷体"/>
+                    <Label Content="•UNI-PLAN不仅提供了丰富的游戏内容，还鼓励玩家之间的互动与交流，提升了游戏的乐趣与深度。" HorizontalAlignment="Left" Margin="43,188,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="751" Foreground="#FF1F00FF" Height="25" FontSize="15" FontFamily="楷体"/>
+                    <Label Content="•如果你喜欢不可预测的冒险旅程，就来UNI-PLAN吧！" HorizontalAlignment="Left" Margin="43,218,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="751" Foreground="White" Height="36" FontSize="15" FontFamily="楷体"/>
+                    <Label Grid.Column="2" Content="©UNI-GAMES|星空游戏 2024 版权所有-保留所有权利" HorizontalAlignment="Left" Margin="85,350,0,0" VerticalAlignment="Top" Width="361" Foreground="White" FontSize="13" FontFamily="楷体"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="1226,285,0,0" VerticalAlignment="Top" Width="0"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+
+.text-button {
+    background: none; /* 移除按钮背景 */
+    color: inherit; /* 文字颜色继承父元素 */
+    border: none; /* 移除边框 */
+    padding: 0; /* 移除内边距 */
+    cursor: pointer; /* 鼠标悬停时显示指针形状 */
+    /* 其他样式根据需要添加 */
+}
+p {
+    text-emphasis-color: rgb(0, 0, 0); /* 强调文字颜色 */
+}   
+span {
+    font-family: 楷体, KaiTi, serif;
+}
+h6 {
+    font-family: 楷体, KaiTi, serif;
+    /* 设置字体大小 */
+        font-size: 1.2em;
+}
+.sidebar{
+    font-family: 楷体, KaiTi, serif;
+    /* 设置字体大小 */
+        font-size: 1.2em;
+}
